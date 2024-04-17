@@ -1,0 +1,18 @@
+.icon {
+    display: flex;
+    padding: 0 10px 0 0;
+  
+    transition: color 0.3s linear;
+
+    &--email {
+      height: 12px;
+      width: 16px;
+    }
+    
+    &--phone {
+      height: 16px;
+      width: 10px;
+    }
+  }
+  
+  

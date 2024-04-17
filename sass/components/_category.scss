@@ -1,0 +1,38 @@
+.category {
+  cursor: pointer;
+
+  &__img-container {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+  }
+
+  &__img {
+    display: flex;
+  }
+  
+  &__content {
+    padding: 20px 24px;
+    border: 1px solid #eee;
+    border-top: none;
+  }
+
+  &__title {
+    margin: 0 0 4px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0.06em;
+  }
+
+  &__type {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    color: #757575;
+  }
+}
+
+
+

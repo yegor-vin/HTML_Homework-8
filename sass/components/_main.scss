@@ -1,0 +1,6 @@
+.main {
+    &:has(.modal--is-open) {
+        overflow: hidden;
+      }
+      
+}

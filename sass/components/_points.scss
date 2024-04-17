@@ -1,0 +1,56 @@
+.points {
+  &__list {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    background-color: #fff;
+    gap: 30px;
+  }
+  &__item {
+    width: 270px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  &__title {
+    color: #212121;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+  }
+  &__text {
+    color: #757575;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.42px;
+    width: 270px;
+  }
+
+  &__icon-list {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    border-radius: 4px;
+    padding: 0 0 30px;
+  }
+  
+  &__icon-item {
+    width: 270px;
+    height: 120px;
+    background-color: #f5f4fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  &__icon {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+

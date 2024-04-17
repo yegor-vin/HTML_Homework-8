@@ -1,0 +1,62 @@
+.contacts {
+  display: flex;
+  gap: 50px;
+
+  --footer {
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+
+    color: #757575;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.28px;
+
+    &--footer {
+      color: #ffffff99;
+      line-height: 24px;
+    }
+  }
+  &__address {
+    color: #fff;
+    font-style: normal;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    text-align: left;
+  }
+
+  &__block {
+    display: flex;
+
+    &:hover {
+      background-color: #fff;
+      & &__icon {
+        color: $color-blue;
+      }
+      & &__email {
+        color: $color-blue;
+      }
+    }
+  }
+  
+  &__icon {
+    box-sizing: content-box;
+  }
+  
+  &__icon-email {
+    padding: 34px 10px 34px 0;
+    transition: color 0.3s linear;
+  }
+}
+
+
+
+
+

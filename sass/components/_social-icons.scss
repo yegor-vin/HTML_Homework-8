@@ -1,0 +1,49 @@
+.social-icons {
+  &__list {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+  }
+
+  &__item {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: all 0.3s linear;
+
+    background-color: transparent;
+    color: #afb1b8;
+
+    cursor: pointer;
+  }
+
+  &__item--footer {
+    background-color: #ffffff1a;
+  }
+
+  &__icon {
+    color: inherit;
+    width: 20px;
+    height: 20px;
+  }
+
+  &__icon--footer {
+    color: #fff;
+  }
+
+  &__item:hover {
+    background-color: $color-blue;
+    color: #fff;
+  }
+  &__title {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    color: #fff;
+    text-transform: uppercase;
+  }
+}

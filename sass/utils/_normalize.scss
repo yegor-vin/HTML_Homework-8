@@ -1,0 +1,12 @@
+* {
+  box-sizing: border-box;
+}
+
+.link {
+  transition: color 0.3s linear;
+  font-family: inherit;
+}
+
+.link:hover {
+  color: $color-blue;
+}

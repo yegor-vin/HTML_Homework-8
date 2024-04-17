@@ -1,0 +1,94 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__item {
+    margin: 0 0 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    width: 100%;
+
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: #757575;
+  }
+
+  &__item--textarea {
+    margin: 0 0 20px;
+  }
+
+  &__item--checkbox {
+    margin: 0 0 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__icon {
+    position: absolute;
+    height: 18px;
+    width: 18px;
+    padding: 2px;
+    color: black;
+
+    left: 12px;
+    bottom: 11px;
+
+    transition: color 0.3s ease;
+  }
+
+  &__input {
+    padding: 0 0 0 42px;
+    border-radius: 4px;
+    border: 1px solid #21212133;
+    height: 40px;
+    transition: color 0.3s linear;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+  }
+
+  &__input:hover,
+  &__input:focus,
+  &__text-area:focus {
+    border-color: $color-blue;
+    outline: 1px solid $color-blue;
+  }
+
+  &__input:hover + &__icon,
+  &__input:focus + &__icon {
+    color: $color-blue;
+  }
+
+  &__text-area {
+    padding: 12px 16px;
+    height: 120px;
+    border: 1px solid #21212133;
+    border-radius: 4px;
+    resize: none;
+  }
+
+  &__text-area::placeholder {
+    color: #75757580;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+  }
+
+  &__button {
+    color: #fff;
+    border-radius: 4px;
+    width: 200px;
+    height: 50px;
+    background-color: #188ce8;
+    border: 1px solid #21212133;
+    cursor: pointer;
+  }
+}

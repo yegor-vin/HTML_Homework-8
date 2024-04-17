@@ -1,0 +1,30 @@
+.team {
+    flex-shrink: 0;
+    background-color: #f5f4fa;
+    width: 100%;
+
+    &__title {
+      margin: 0 0 50px;
+      text-align: center;
+      font-size: 36px;
+      font-weight: 700;
+      line-height: 42px;
+      letter-spacing: 0.03em;
+    }
+    
+    &__list {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+      justify-content: center;
+      border-radius: 4px;
+    }
+  }
+
+
+
+  
+  
+  
+  
+  
