@@ -1,0 +1,133 @@
+@import "../utils/vars";
+
+.burger-menu {
+  display: none;
+  width: 100%;
+
+  @include onTablet {
+    display: flex;
+  }
+
+  &--is-open {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    background: #fff;
+  }
+
+  &__content {
+    margin: 0 auto;
+    padding: 48px 40px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    max-width: 480px;
+    width: 100%;
+
+    @include onTablet {
+      margin: 0;
+      padding: 0;
+      flex-direction: row;
+      max-width: unset;
+    }
+
+    @include onDesktop {
+      width: 100%;
+      justify-content: space-between;
+    }
+
+  }
+
+  &__nav {
+    display: flex;
+    margin: 0 0 306px;
+
+    @include onTablet {
+      margin: 0;
+    }
+  }
+
+  &__contacts {
+    margin: 0 0 64px;
+
+    @include onTablet {
+      margin: 0;
+    }
+  }
+
+  &__socials {
+    list-style: none;
+    display: flex;
+
+    @include onTablet {
+      display: none;
+    }
+  }
+
+  &__socials-item {
+    position: relative;
+    padding: 0 10px 0;
+
+    &:not(:last-child)::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      width: 1px;
+
+      background-color: #21212133;
+    }
+
+    &:first-child {
+      padding: 0 10px 0 0;
+    }
+
+    &:last-child {
+      padding: 0 0 0 10px;
+    }
+  }
+
+  &__socials-link {
+    color: $color-blue;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+  }
+
+  &__close-btn {
+    margin: 0;
+    padding: 0;
+
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 40px;
+    width: 40px;
+
+    border: none;
+    background-color: #fff;
+
+    cursor: pointer;
+
+    @include onTablet {
+      display: none;
+    }
+  }
+
+  &__cross {
+    height: 18px;
+    width: 18px;
+  }
+}

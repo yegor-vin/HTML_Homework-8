@@ -1,4 +1,8 @@
 .page {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
+
+  &:has(.burger-menu--is-open) {
+    overflow: hidden;
+  }
 }

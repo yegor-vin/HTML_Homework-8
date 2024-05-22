@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Homework 6</title>
+    <title>Homework 8</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -25,40 +25,71 @@
             ><span class="logo--color-black">Studio</span></a
           >
 
-          <div class="header__right-block">
-            <nav class="nav">
-              <ul class="nav__list">
-                <li class="nav__item">
-                  <a class="nav__link link is-active" href="./index.html"
-                    >Студія</a
-                  >
+          <div class="header__burger-menu burger-menu">
+            <div class="burger-menu__content header__nav">
+              <nav class="nav burger-menu__nav">
+                <ul class="nav__list">
+                  <li class="nav__item">
+                    <a class="nav__link link is-active" href="./index.html"
+                      >Студія</a
+                    >
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link link" href="./portfolio.html"
+                      >Портфоліо</a
+                    >
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link link" href="#">Контакти</a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="contacts burger-menu__contacts">
+                <a
+                  class="contacts__item contacts__item--email link"
+                  href="mailto:info@devstudio.com"
+                >
+                  <svg class="icon icon--email contacts__icon">
+                    <use href="./images/sprite.svg#email"></use>
+                  </svg>
+                  info@devstudio.com</a
+                >
+                <a
+                  class="contacts__item contacts__item--tel link"
+                  href="tel:+380961111111"
+                >
+                  <svg class="icon icon--phone contacts__icon">
+                    <use href="./images/sprite.svg#smartphone"></use>
+                  </svg>
+                  +38 096 111 11 11
+                </a>
+              </div>
+              <ul class="burger-menu__socials">
+                <li class="burger-menu__socials-item">
+                  <a class="burger-menu__socials-link" href="#">Instagram</a>
                 </li>
-                <li class="nav__item">
-                  <a class="nav__link link" href="./portfolio.html"
-                    >Портфоліо</a
-                  >
+                <li class="burger-menu__socials-item">
+                  <a class="burger-menu__socials-link" href="#">Twitter</a>
                 </li>
-                <li class="nav__item">
-                  <a class="nav__link link" href="#">Контакти</a>
+                <li class="burger-menu__socials-item">
+                  <a class="burger-menu__socials-link" href="#">Facebook</a>
+                </li>
+                <li class="burger-menu__socials-item">
+                  <a class="burger-menu__socials-link" href="#">LinkedIn</a>
                 </li>
               </ul>
-            </nav>
-
-            <div class="contacts">
-              <a class="contacts__item link" href="mailto:info@devstudio.com">
-                <svg class="icon icon--email contacts__icon">
-                  <use href="./images/sprite.svg#email"></use>
+              <button type="button" class="burger-menu__close-btn">
+                <svg class="burger-menu__cross">
+                  <use href="./images/sprite.svg#cross" />
                 </svg>
-                info@devstudio.com</a
-              >
-              <a class="contacts__item link" href="tel:+380961111111">
-                <svg class="icon icon--phone contacts__icon">
-                  <use href="./images/sprite.svg#smartphone"></use>
-                </svg>
-                +38 096 111 11 11
-              </a>
+              </button>
             </div>
           </div>
+          <button type="button" class="header__burger-btn">
+            <svg class="header__burger-icon">
+              <use href="./images/sprite.svg#burger-icon"></use>
+            </svg>
+          </button>
         </div>
       </div>
     </header>
@@ -173,7 +204,7 @@
 
       <section class="section team">
         <div class="container">
-          <h2 class="team__title">Наша команда</h2>
+          <h2 class="section__title">Наша команда</h2>
 
           <ul class="team__list">
             <li class="team__item person">
@@ -328,10 +359,10 @@
         </div>
       </section>
 
-      <section class="clients">
+      <section class="section clients">
         <div class="container">
           <div class="clients__content">
-            <h2 class="clients__title">Постійні клієнти</h2>
+            <h2 class="section__title">Постійні клієнти</h2>
             <ul class="clients__list">
               <li class="clients__item">
                 <svg class="clients__logo">

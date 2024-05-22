@@ -1,18 +1,36 @@
 .icon {
-    display: flex;
-    padding: 0 10px 0 0;
-  
-    transition: color 0.3s linear;
+  display: flex;
 
-    &--email {
-      height: 12px;
-      width: 16px;
+  transition: color 0.3s linear;
+
+  @include onTablet {
+    padding: 0 8px 0 0;
+  }
+  @include onDesktop {
+    padding: 0 10px 0 0;
+  }
+
+  &--email {
+    @include onTablet {
+      width: 14px;
+      height: 10px;
     }
-    
-    &--phone {
-      height: 16px;
-      width: 10px;
+
+    @include onDesktop {
+      width: 16px;
+      height: 12px;
     }
   }
-  
-  
+
+  &--phone {
+    @include onTablet {
+      width: 10px;
+      height: 14px;
+    }
+
+    @include onDesktop {
+      width: 10px;
+      height: 16px;
+    }
+  }
+}
